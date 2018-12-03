@@ -1,0 +1,49 @@
+.DropdownInput-input{
+	height:50px;
+	padding:10px;
+	margin:0;
+	outline: 0;
+	border: 1px solid #cecece;
+	transition: all .3s;
+	border-radius: 2px;
+	display: block;
+	width: 100%;
+}
+.DropdownInput-input:hover{
+	border: 1px solid #a5a5a5;
+	outline: 0;
+}
+.DropdownInput-input:focus {
+	box-shadow: none;
+	outline: none;
+}
+.DropdownInput {
+	position: relative;
+	display: block;
+	display: flex;
+	flex-direction: column;
+	flex:1 1 auto;
+	margin:5px;
+	padding: 0px 5px;
+}
+.DropdownInput.hasError .DropdownInput-input{
+	border: 1px solid red;
+}
+.DropdownInput-option {
+	padding: 15px;
+	display: block;
+	cursor: pointer;
+}
+.DropdownInput-option:hover {
+	background: #f1f1f1;
+}
+.DropdownInput-optionsList {
+	position: absolute;
+	left: 5px;
+	top: 100px;
+	width: 100%;
+	max-width: 400px;
+	background: #ffffff;
+	border: 1px solid #cecece;
+	z-index: 2;
+}

@@ -1,0 +1,64 @@
+.checkbox{
+	overflow: hidden;
+	display: flex;
+	flex:1 1 auto;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+	width: 50%;
+	height:50px;
+	margin:5px 5px 5px 5px;
+	padding: 0 20px;
+	border-radius: 2px;
+	background: #e3eef1;
+	transition: all .3s;
+	cursor: pointer;
+}
+.checkbox:hover{
+	background: #A2BBC0;
+}
+
+.checkbox input {
+     display: none;
+}
+
+.checkbox p {
+	margin-right:10px;
+}
+
+.checkbox span {
+	position: absolute;
+	right:10px;
+	top:15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    display: block;
+    background: white;
+}
+
+.checkbox input:checked + span {
+    background: #ffffff;
+}
+.checkbox input + span:after {
+	transition: all .3s;
+	border: solid #ffffff;
+}
+.checkbox input:checked + span:after {
+	content: '';
+    display: block;
+ 
+    /*Make it a small rectangle so the border will create an L-shape*/
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 6px;
+    height: 11px;
+ 
+    /*Add a white border on the bottom and left, creating that 'L' */
+    border: solid #1F3134;
+    border-width: 0 2px 2px 0;
+ 
+    /*Rotate the L 45 degrees to turn it into a checkmark*/
+    transform: rotate(45deg);
+}

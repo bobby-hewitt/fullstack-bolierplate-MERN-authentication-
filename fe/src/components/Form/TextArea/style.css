@@ -1,0 +1,25 @@
+.textArea{
+	display: flex;
+	flex-direction: column;
+	flex:1 1 auto;
+	margin:5px;
+	padding: 0px 5px;
+}
+.textArea.hasError textarea {
+	border: 1px solid red;
+}
+
+.textArea textarea{
+	padding:10px;
+	height:150px;
+	margin:0;
+	outline: 0;
+	border: 1px solid #cecece;
+	transition: all .3s;
+	border-radius: 2px;
+}
+
+.textArea textarea:hover{
+	border: 1px solid #a5a5a5;
+	outline: 0;
+}

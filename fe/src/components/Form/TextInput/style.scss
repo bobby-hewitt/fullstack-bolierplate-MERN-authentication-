@@ -1,0 +1,42 @@
+@import 'styles/colors.scss';
+
+.textInput{
+	display: block;
+	margin:5px;
+	padding: 0px 5px;
+	
+}
+.helpText{
+		color:$grey;
+	}
+
+.textInput.hasError input{
+	border: 1px solid red;
+}
+
+.textInput input{
+	height:40px;
+	width: 100%;
+	/* padding:10px; */
+	margin:0;
+	outline: 0;
+	border: 1px solid #cecece;
+	transition: all .3s;
+	border-radius: 2px;
+}
+
+.textInput input:hover{
+	border: 1px solid #a5a5a5;
+	outline: 0;
+}
+.textInput input:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+@media (max-width: 786px) {
+	.textInput {
+		display: block;
+		width: 100%;
+	}
+}

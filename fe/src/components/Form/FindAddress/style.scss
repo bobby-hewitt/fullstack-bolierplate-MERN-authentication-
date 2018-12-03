@@ -1,0 +1,67 @@
+@import 'styles/colors.scss';
+
+.addressInput{
+	position: relative;
+	display: block;
+	margin:5px;
+	padding: 0px 5px;
+	height:40px;
+
+}
+.resultsContainer{
+		position: absolute;
+		top:40px;
+		left:0;
+		width:100%;
+		
+		background:$white;
+		border:1px solid $black;
+		
+	}	
+	.result{
+			cursor:pointer;
+			background:$white;
+			padding:0px 5px;
+			width:100%;
+			border: 1px solid $grey;
+			border-top:none;
+			text-overflow: ellipsis;
+			height:40px;
+			overflow: hidden;
+			line-height: 40px;
+		}
+
+.helpText{
+		color:$grey;
+	}
+
+.addressInput.hasError input{
+	border: 1px solid red;
+}
+
+.addressInput input{
+	height:40px;
+	width: 100%;
+	/* padding:10px; */
+	margin:0;
+	outline: 0;
+	border: 1px solid #cecece;
+	transition: all .3s;
+	border-radius: 2px;
+}
+
+.addressInput input:hover{
+	border: 1px solid #a5a5a5;
+	outline: 0;
+}
+.addressInput input:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+@media (max-width: 786px) {
+	.addressInput {
+		display: block;
+		width: 100%;
+	}
+}

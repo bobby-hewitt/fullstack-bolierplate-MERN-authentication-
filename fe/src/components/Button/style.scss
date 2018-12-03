@@ -1,0 +1,21 @@
+@import 'styles/colors.scss';
+
+.button{
+	height:40px;
+	padding: 0 10px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	line-height:40px;
+	cursor: pointer;
+	border-radius: 2px;
+	color:$white;
+	background:$primary;
+	&.primary{
+		
+	}
+	&.disabled {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+}
